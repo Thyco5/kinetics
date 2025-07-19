@@ -1,0 +1,13 @@
+# SN2 Transition State search using my proven template
+! Freq B3LYP def2-SVP NEB-TS
+
+%NEB
+ NEB_END_XYZFILE "product_opt.xyz"
+end
+
+%geom
+ MaxIter 600
+end
+
+# Using the optimized reactant with the correct charge for SN2
+* xyzfile -1 1 reactant_opt.xyz
